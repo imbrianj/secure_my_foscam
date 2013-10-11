@@ -35,14 +35,14 @@ def updated() {
 }
 
 def changeMode(evt) {
+  if(newPreset) {
+    def preset = new Integer(newPreset)
+
+    log.info("Preset: ${preset}")
+    foscams?.preset(preset)
+  }
+
   if(newMode == "Alarm On") {
-    if(newPreset) {
-      def preset = new Integer(newPreset)
-
-      log.info("Preset: ${preset}")
-      foscams?.preset(preset)
-    }
-
     log.info("Alarm: on")
 
     foscams?.alarmOn()
