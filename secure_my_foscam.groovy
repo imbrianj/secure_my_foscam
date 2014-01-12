@@ -4,7 +4,7 @@
  *  Author: brian@bevey.org
  *  Date: 9/25/13
  *
- *  Simply turns on the alarm for any Foscam custome device.  This is intended
+ *  Simply turns on the alarm for any Foscam custom device.  This is intended
  *  to be used with the Foscam custom device type with a camera set up for FTP
  *  or email uploading based on motion detection.
  */
