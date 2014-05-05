@@ -9,6 +9,16 @@
  *  or email uploading based on motion detection.
  */
 
+definition(
+    name:        "Secure My Foscam",
+    namespace:   "ImBrian",
+    author:      "brian@bevey.org",
+    description: "Simply turns on the alarm for any Foscam custom device.  This is intended to be used with the Foscam custom device type with a camera set up for FTP or email uploading based on motion detection.",
+    category:    "Green Living",
+    iconUrl:     "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience.png",
+    iconX2Url:   "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience%402x.png"
+)
+
 preferences {
   section("Change to this mode to...") {
     input "newMode", "enum", metadata:[values:["Alarm On", "Alarm Off"]]
